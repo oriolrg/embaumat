@@ -30,7 +30,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link href="/css/carousel.css" rel="stylesheet">
+        <link href="/jmvc/jmvc/app/views/default/css/carousel.css" rel="stylesheet">
         
             <!-- Bootstrap core JavaScript
         ================================================== -->

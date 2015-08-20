@@ -55,7 +55,7 @@ class mvc_controller {
         */
         function relleus()
         {
-                        $pagina=$this->load_template('Relleus Guies de Muntanya');				
+                        $pagina=$this->load_template('Relleus Guies de Muntanya','app/views/default/sections/s.menurelleus.php');				
                         $html = $this->load_page('app/views/default/modules/relleus/relleus.php');
                         $pagina = $this->replace_content('/\#CONTENIDO\#/ms' ,$html , $pagina);
                         $this->view_page($pagina);
@@ -65,7 +65,7 @@ class mvc_controller {
         HTML | codi html de la pagina
 			*/
 			function embaumat(){
-				$pagina=$this->load_template('Embauma\'t a la Vall de Lord, una experiència única, un viatge al passat');						
+				$pagina=$this->load_template('Embauma\'t a la Vall de Lord, una experiència única, un viatge al passat','app/views/default/sections/s.menuembaumat.php');						
 				$buscador = $this->load_page('app/views/default/modules/embaumat/embaumat.php');
 				$pagina = $this->replace_content('/\#CONTENIDO\#/ms' ,$buscador , $pagina);	
 				$this->view_page($pagina);
@@ -86,12 +86,12 @@ class mvc_controller {
 	OUTPIT
 		$pagina | string que contiene toda el cocigo HTML de la plantilla 
 	*/
-	function load_template($title='Sin Titulo'){
+	function load_template($title='Sin Titulo', $menu_left='app/views/default/sections/s.menurelleus.php'){
 		$pagina = $this->load_page('app/views/default/page.php');
 		$header = $this->load_page('app/views/default/sections/s.header.php');
 		$pagina = $this->replace_content('/\#HEADER\#/ms' ,$header , $pagina);
 		$pagina = $this->replace_content('/\#TITLE\#/ms' ,$title , $pagina);				
-		$menu_left = $this->load_page('app/views/default/sections/s.menuizquierda.php');
+		$menu_left = $this->load_page($menu_left);
 		$pagina = $this->replace_content('/\#MENU\#/ms' ,$menu_left , $pagina);
 		return $pagina;
 	}

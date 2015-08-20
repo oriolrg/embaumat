@@ -22,6 +22,7 @@
             <img class="slide" src="/jmvc/jmvc/app/views/default/img/ban/piragues.jpg" alt="PIRAGUISME A LA LLOSA DEL CAVALL">
             <div class="container">
                 <div class="carousel-caption">
+                    <div class="carousel-text"></div>
                     <h1>PIRAGUISME A LA LLOSA DEL CAVALL</h1>
                     <p>TREU-TE LA CALOR DEL DAMUNT EN UNES AIGUES DE MUNTANYA, I UN ENTORN IDEAL
                         <li>Servei de Bar</li>
@@ -37,6 +38,7 @@
             <img class="slide" src="/jmvc/jmvc/app/views/default/img/ban/slidervila.jpg" alt="PIRAGUISME A LA LLOSA DEL CAVALL">
             <div class="container">
                 <div class="carousel-caption">
+                    <div class="carousel-text"></div>
                     <h1>PIRAGUISME A LA LLOSA DEL CAVALL</h1>
                     <p>TREU-TE LA CALOR DEL DAMUNT EN UNES AIGUES DE MUNTANYA, I UN ENTORN IDEAL</p>
                     <p><a class="btn btn-lg btn-primary" href="http://www.relleus.cat/activitats/piraguisme" role="button">Consulta</a></p>

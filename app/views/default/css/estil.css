@@ -44,7 +44,7 @@ label {
     
 }
 #contingut-tab{
-    width:80%;
+    width:100%;
     text-align: justify;
     margin: 0 auto;
 }
@@ -75,4 +75,10 @@ li>a>h5>.tab-text: .tab-text:hover{
     margin-right: auto;
     text-align: center;
     
+}
+.principal{
+    background-color: #fff;
+}
+.secundari{
+    background-color: #eee;
 }
