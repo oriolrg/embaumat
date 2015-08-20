@@ -1,0 +1,78 @@
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+#formulari{ /* Este es un truco para crear una flechita */
+    top:50px;
+    position: relative;
+}
+.condicions{
+    font-size:12px;
+    
+}
+label {
+  display: block;
+  margin: .3em 0 0 0;
+}
+#container-tabs{/*barra menu*/
+    position:relative;
+    background-color: #071907;
+    top:-60px;
+}
+/*#pestanyes-tabs{/*modificacio mida de les pestanyes
+    width:80%;
+    margin: 0 auto;
+}*/
+#pestanya{
+   
+    
+}
+#contingut-tab{
+    width:80%;
+    text-align: justify;
+    margin: 0 auto;
+}
+.tab-title{
+    color:#86B404;
+}
+/*#pestanyes-tabs{
+    font-weight: bold;
+}*/
+.tab-text{
+    color:#666;
+}
+li>a>h5>.tab-text: .tab-text:hover{
+    color:#000;
+}
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-bottom:0;
+  /* Set the fixed height of the footer here */
+    
+  background-color: #071907;
+}
+.embaumat{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    
+}
