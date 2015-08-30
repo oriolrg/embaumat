@@ -60,31 +60,70 @@
         <script src="/js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
         <script>
         var device = navigator.userAgent
-        if (!device.match(/Iphone/i)|| !device.match(/Ipod/i)|| !device.match(/Android/i)|| !device.match(/J2ME/i)|| !device.match(/BlackBerry/i)|| !device.match(/iPhone|iPad|iPod/i)|| !device.match(/Opera Mini/i)|| !device.match(/IEMobile/i)|| !device.match(/Mobile/i)|| !device.match(/Windows Phone/i)|| !device.match(/windows mobile/i)|| !device.match(/windows ce/i)|| device.match(/webOS/i)|| !device.match(/palm/i)|| !device.match(/bada/i)|| !device.match(/series60/i)|| !device.match(/nokia/i)|| !device.match(/symbian/i)|| !device.match(/HTC/i))
-         { 
+        
+        if (screen.width>1024)
+        {
+            
+            alert ("Grande");
+            $(document).ready(function() {
+                        $('.navbar-wrapper').scrollToFixed();
+                        var summaries = $('#container-tabs');
+                    summaries.each(function(i) {
+                        var summary = $(summaries[i]);
+                        var next = summaries[i + 1];
 
-                $(document).ready(function() {
-                    $('.navbar-wrapper').scrollToFixed();
-                    var summaries = $('#container-tabs');
-                summaries.each(function(i) {
-                    var summary = $(summaries[i]);
-                    var next = summaries[i + 1];
-
-                    summary.scrollToFixed({
-                        marginTop: $('.navbar-wrapper').outerHeight(true) + 25,
-                        limit: function() {
-                            var limit = 0;
-                            if (next) {
-                                limit = $(next).offset().top - $(this).outerHeight(true) - 15;
-                            }
-                            return limit;
-                        },
-                        zIndex: 999
+                        summary.scrollToFixed({
+                            marginTop: $('.navbar-wrapper').outerHeight(true) -20,
+                            limit: function() {
+                                var limit = 0;
+                                if (next) {
+                                    limit = $(next).offset().top - $(this).outerHeight(true) ;
+                                }
+                                return limit;
+                            },
+                            zIndex: 999
+                        });
                     });
-                });
-                });
+                    });
+        
+            
+            //alert ("Grande");
+            $(document).ready(function() {
+                        $('.navbar-wrapper').scrollToFixed();
+                        var summaries = $('.navbar-wrapper2');
+                    summaries.each(function(i) {
+                        var summary = $(summaries[i]);
+                        var next = summaries[i + 1];
 
-        }
+                        summary.scrollToFixed({
+                            marginTop: $('.navbar-wrapper').outerHeight(true) +100,
+                            limit: function() {
+                                var limit = 0;
+                                if (next) {
+                                    limit = $(next).offset().top - $(this).outerHeight(true) ;
+                                }
+                                return limit;
+                            },
+                            zIndex: 999
+                        });
+                    });
+                    });
+        
+        var change= false;
+        $(window).scroll(function(){
+            window_y = $(window).scrollTop(); // VALOR QUE SE HA MOVIDO DEL SCROLL
+            scroll_critical = parseInt($("#myCarousel").height()-60); // VALOR DE TU DIV
+            if (window_y > scroll_critical) { // SI EL SCROLL HA SUPERADO EL ALTO DE TU DIV
+               // ACA MUESTRAS EL OTRO DIV Y EL OCULTAS EL DIV QUE QUIERES
+               $('.navbar-wrapper').fadeOut('fast'); // OCULTAR
+               $('.navbar-wrapper2').fadeIn('slow');
+            } else {
+                $('.navbar-wrapper2').fadeOut('fast'); // OCULTAR
+                $('.navbar-wrapper').fadeIn('fast');
+               // ACA HACES TODO LO CONTRARIO
+            }
+        });
+    }
         </script>
         <title>#TITLE#</title>
 </head>

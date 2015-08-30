@@ -1,3 +1,9 @@
+body {
+    font-family: fantasy;
+    font-size: 16px;
+    line-height: 1.42857;
+    color: #333;
+}
 .error{
     background-color: #BC1010;
     padding: 6px 12px;
@@ -33,15 +39,17 @@ label {
 #container-tabs{/*barra menu*/
     position:relative;
     background-color: #071907;
+    opacity: 0.93;
     top:-60px;
+    z-index: 1000;
 }
-/*#pestanyes-tabs{/*modificacio mida de les pestanyes
-    width:80%;
+#pestanyes-tabs{
+    width:100%;
     margin: 0 auto;
-}*/
+}
 #pestanya{
    
-    
+    margin: 0 auto;
 }
 #contingut-tab{
     width:100%;
@@ -78,7 +86,38 @@ li>a>h5>.tab-text: .tab-text:hover{
 }
 .principal{
     background-color: #fff;
+
 }
 .secundari{
     background-color: #eee;
+}
+.principal >p{
+    margin-left: 20%;
+    margin-right: 80px;  
+}
+.secundari >p,ul,h1,h2,h3,.embaumat{
+    margin-left: 10%;
+    margin-right: 80px;  
+}
+/*desplasament ancora per corregir el menu fixat*/
+a.anchor{
+    display: block; 
+    position: relative; 
+    top: -130px; 
+    visibility: hidden;
+}
+.menuembaumat{
+    background-color: #071907;
+    height: 100%;
+    float:left;
+    margin-left: 0px;
+}
+.contingutembaumat{
+    height: 75%;
+
+}
+.navbar-wrapper2>.nav{
+    background-color: #071907;
+    float: left;
+    width: 50px;
 }

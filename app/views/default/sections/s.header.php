@@ -1,11 +1,6 @@
 <!-- Carousel
 ======================================================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
-    </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <a href="http://www.relleus.cat">
@@ -45,6 +40,11 @@
                 </div>
             </div>
         </div>
+            <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+    </ol>
     </div>            
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -59,13 +59,13 @@
 <div id="container-tabs">
     <ul id="pestanyes-tabs" class="nav nav-tabs nav-justified">
         <li id="pestanya">
-            <a href="?action=relleus" data="tab"><img class="img-circle pull-left" src="/img/logotip-01.jpg" alt="Relleus" width="120" height="60">
+            <a href="?action=relleus#relleus" data="tab"><img class="img-circle pull-left" src="/img/logotip-01.jpg" alt="Relleus" width="120" height="60">
                 <h4><span class="tab-title"> RELLEUS</span></h4>
                 <h5><span class="tab-text"> Guies de muntanya</span></h5>
             </a>
         </li>
         <li id="pestanya">
-            <a href="?action=embaumat" data="tab"><img class="img-circle pull-left" src="/img/logobauma.jpg" alt="Embauma't" width="120" height="60">
+            <a href="?action=embaumat#embaumat" data="tab"><img class="img-circle pull-left" src="/img/logobauma.jpg" alt="Embauma't" width="120" height="60">
                 <h4><span class="tab-title">EMBAUMA'T</span></h4>
                 <h5><span class="tab-text">Viu una experiència</span></h5>
             </a>

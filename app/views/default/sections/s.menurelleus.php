@@ -17,7 +17,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.php">Relleus Guies de Muntanya</a>
+                            <img class="img-circle pull-left" src="/img/logotip-01.jpg" alt="Reserva" width="100" height="40">
+                            <a class="navbar-brand" href="index.php"> Relleus Guies de Muntanya</a>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
@@ -32,13 +33,16 @@
                                     <li><a href="#">xxxxx</a></li>-->
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Promocions</li>
-                                    <?php
+                                    <li><a href="#relleuspiragua">Relleus Piragües</a></li>
+                                    <li><a href="#relleusraqueta">Relleus Raquetes</a></li>
+                                    <li><a href="#embaumatamic"></a></li>
+                                    <!--<?/*php
                                         require_once("funcions.php");
                                         $productes = dameProducte();
                                         foreach($productes as $indice => $registro){
                                             echo '<li><a href="#">'.$registro["Nom"].'</a></li>';
-                                        }
-                                    ?>
+                                        }*/
+                                    ?>-->
                                 </ul>
                                 </li>
                                 <li><a href="http://www.embaumat.cat/reserva/"><span class="glyphicon glyphicon-shopping-cart"></span> Fés la teva reserva</a></li>

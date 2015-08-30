@@ -17,6 +17,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <img class="img-circle pull-left" src="/img/logobauma.jpg" alt="Embauma't" width="100" height="40">
                             <a class="navbar-brand" href="index.php">Embauma't, Viu una experiència</a>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
@@ -32,13 +33,16 @@
                                     <li><a href="#">xxxxx</a></li>-->
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Promocions</li>
-                                    <?php
+                                    <li><a href="#embaumatmistic">Embaumada Mística</a></li>
+                                    <li><a href="#embaumatromantic">Embaumada Romàntica</a></li>
+                                    <li><a href="#embaumatamic">Embaumada entre amics</a></li>
+                                    <!--<?php /*
                                         require_once("funcions.php");
                                         $productes = dameProducte();
                                         foreach($productes as $indice => $registro){
                                             echo '<li><a href="#">'.$registro["Nom"].'</a></li>';
-                                        }
-                                    ?>
+                                        }*/
+                                    ?>-->
                                 </ul>
                                 </li>
                                 <li><a href="http://www.embaumat.cat/reserva/"><span class="glyphicon glyphicon-shopping-cart"></span> Fés la teva reserva</a></li>
@@ -51,3 +55,44 @@
                 </nav>
             </div>
         </div>
+
+
+
+        <div class="navbar-wrapper2">
+            
+                
+                    <div id="nav" class="nav">                        
+                            
+                            
+                        
+                            <ul class="nav">
+                                <li><img class="img-circle" src="/img/logobauma.jpg" alt="Embauma't" width="100" height="40"> </li>
+                                <li><a href="#">Inici</a></li>
+                                <li><a href="#about">Qui Som?</a></li>
+                                <li><a href="http://www.embaumat.cat/contacte/">Contacte</a></li>
+                                <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activitats <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <!--<li><a href="#">xxxxx</a></li>
+                                    <li><a href="#">xxx x </a></li>
+                                    <li><a href="#">xxxxx</a></li>-->
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Promocions</li>
+                                    <li><a href="#embaumatmistic">Embaumada Mística</a></li>
+                                    <li><a href="#embaumatromantic">Embaumada Romàntica</a></li>
+                                    <li><a href="#embaumatamic">Embaumada entre amics</a></li>
+                                    <!--<?php /*
+                                        require_once("funcions.php");
+                                        $productes = dameProducte();
+                                        foreach($productes as $indice => $registro){
+                                            echo '<li><a href="#">'.$registro["Nom"].'</a></li>';
+                                        }*/
+                                    ?>-->
+                                </ul>
+                                </li>
+                                <li><a href="http://www.embaumat.cat/reserva/"><span class="glyphicon glyphicon-shopping-cart"></span> Fés la teva reserva</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+         
